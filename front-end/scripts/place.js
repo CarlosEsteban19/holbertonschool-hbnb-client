@@ -134,9 +134,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (response.ok) {
                 alert('Review submitted successfully!');
-                document.getElementById('review-form').reset();
+                window.location.reload();
             } else {
-                alert(`Failed to submit review`);
+                alert('Failed to submit review');
             }
         } catch (error) {
             console.error('Error submiting review:', error);
