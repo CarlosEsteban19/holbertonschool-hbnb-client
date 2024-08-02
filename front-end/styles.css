@@ -6,7 +6,8 @@
     font-family: 'Arial', sans-serif;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     font-size: 16px;
 }
@@ -63,7 +64,8 @@ label {
     color: #555;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 0.75rem;
     margin-bottom: 1rem;
@@ -88,13 +90,15 @@ input, textarea {
     padding: 1rem;
 }
 
-.place-card, .review-card {
+.place-card,
+.review-card {
     margin: 20px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 10px;
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .place-card img {
@@ -123,6 +127,7 @@ button {
 button:hover {
     background-color: #70C2C0;
 }
+
 .container {
     display: flex;
 }
@@ -165,6 +170,17 @@ button:hover {
 .reviews,
 #add-review {
     margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #e8eaed;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+#add-review h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5em;
 }
 
 #add-review form {
@@ -173,9 +189,21 @@ button:hover {
     gap: 1rem;
 }
 
+#add-review label {
+    font-size: 1em;
+}
+
+#add-review textarea,
+#add-review select {
+    border-radius: 10px;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
 #add-review textarea {
     resize: vertical;
-    border-radius: 10px;
+    min-height: 100px;
 }
 
 footer {
